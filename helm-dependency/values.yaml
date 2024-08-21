@@ -5,3 +5,18 @@ wordpress:
       password: bar
     rootUser:
       password: baz
+      
+persistence:
+  enabled: true
+  storageClass: gp2
+  accessModes:
+    - ReadWriteOnce
+  size: 8Gi
+
+mariadb:
+  persistence:
+    enabled: true
+    storageClass: gp2
+    accessModes:
+      - ReadWriteOnce
+    size: 8Gi
