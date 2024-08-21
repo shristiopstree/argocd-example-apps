@@ -43,3 +43,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+persistence:
+  enabled: true
+  storageClass: gp2
+  accessModes:
+    - ReadWriteOnce
+  size: 8Gi
